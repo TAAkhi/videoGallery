@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>plg_content_videoGallery</name>
+	<author>Avalon Hosting Services Ltd. </author>
+	<creationDate>Aguest 2017</creationDate>
+	<copyright>Copyright (C) 2017 - Avalon Hosting Services Ltd. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@avalonhosting.services</authorEmail>
+	<authorUrl>https://avalonhosting.services</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_CONTENT_VIDEOGALLERY_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="videoGallery">videoGallery.php</filename>
+		<filename plugin="videoGallery">videoGallery.xml</filename>
+		
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_videoGallery.ini</language>
+		<language tag="en-GB">en-GB.plg_content_videoGallery.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
