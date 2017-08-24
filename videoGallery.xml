@@ -11,9 +11,14 @@
 	<description>PLG_CONTENT_VIDEOGALLERY_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="videoGallery">html5gallery.js</filename>
+		<filename plugin="videoGallery">script.js</filename>
+		<filename plugin="videoGallery">html5gallery.css</filename>
 		<filename plugin="videoGallery">videoGallery.php</filename>
 		<filename plugin="videoGallery">videoGallery.xml</filename>
-		<folder>skins</folder>	
+		<filename plugin="videoGallery">videoGallery.xml</filename>
+		<folder>skins</folder>
+		<folder>css</folder>	
+		<folder>js</folder>		
 	</files>
 	<languages>
 		<language tag="en-GB">en-GB.plg_content_videoGallery.ini</language>

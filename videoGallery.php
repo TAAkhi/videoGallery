@@ -188,7 +188,7 @@ class plgContentVideoGallery extends JPlugin
 				$imgGallery = array();
 
 				
-				$plg_html = '<div class="html5gallery" data-skin="light" data-width="480" data-height="270" style="display: none;">';
+				$plg_html = '<div class="html5gallery" data-skin="mediapage" data-width="480" data-height="270" data-autoplayvideo="false" data-onthumbclick="jumpToTop" data-responsive="true" data-resizemode="fill" data-html5player="true" data-autoslide="true" data-effect="fade" data-shownumbering="true">';
 
 				// Loop through the image file list
 				
@@ -214,7 +214,7 @@ class plgContentVideoGallery extends JPlugin
 					
 					// Output
 
-					$plg_html .= '<a href="'. JURI::root(true).str_replace('//','/',$gallery[$foundImgs]->sourceVideoFilePath).'"><img src="'. JURI::root(true).str_replace('//','/',$imgGallery[$founds]->sourceVideoFilePath).'" alt="Big Buck Bunny, Copyright Blender Foundation"></a>';
+					$plg_html .= '<a href="'. JURI::root(true).str_replace('//','/',$gallery[$foundImgs]->sourceVideoFilePath).'"><img src="'. JURI::root(true).str_replace('//','/',$imgGallery[$founds]->sourceVideoFilePath).'" alt="'.$foundImgs.'"></a>';
 
 
 				}// foreach loop
@@ -239,7 +239,9 @@ class plgContentVideoGallery extends JPlugin
 
 					JHtml::_('jquery.framework');
 					
-					$document->addScript($siteUrl.'plugins/content/videoGallery/html5gallery.js');
+					$document->addScript($siteUrl.'plugins/content/videoGallery/js/html5gallery.js');
+					$document->addScript($siteUrl.'plugins/content/videoGallery/js/script.js');
+					$document->addStyleSheet($siteUrl.'plugins/content/videoGallery/css/html5gallery.css');
 					
 
 					if ($extraClass)
