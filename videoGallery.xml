@@ -13,8 +13,7 @@
 		<filename plugin="videoGallery">html5gallery.js</filename>
 		<filename plugin="videoGallery">videoGallery.php</filename>
 		<filename plugin="videoGallery">videoGallery.xml</filename>
-		<folder>skins</folder>
-		
+		<folder>skins</folder>	
 	</files>
 	<languages>
 		<language tag="en-GB">en-GB.plg_content_videoGallery.ini</language>

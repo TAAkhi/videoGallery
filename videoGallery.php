@@ -101,7 +101,6 @@ class plgContentVideoGallery extends JPlugin
 			foreach ($matches[0] as $key => $match){
 
 				$tagcontent = preg_replace("/{.+?}/", "", $match);
-				
 
 				if(strpos($tagcontent,':')!==false){
 					$tagparams 			= explode(':',$tagcontent);
@@ -114,7 +113,7 @@ class plgContentVideoGallery extends JPlugin
 				$srcVideoFolder = $galleries_rootfolder.'/'.$galleryFolder;
 				$gal_id = substr(md5($key.$srcVideoFolder), 1, 10);
 
-				
+			
 				// API
 				jimport('joomla.filesystem.folder');
 
@@ -162,9 +161,6 @@ class plgContentVideoGallery extends JPlugin
 				foreach ($srcFolder as $srcVideo)
 				{
 					$fileInfo = pathinfo($srcVideo);
-
-					
-
 					if (array_key_exists('extension', $fileInfo) && in_array(strtolower($fileInfo['extension']), $fileTypes))
 					{
 						$found[] = $srcVideo;
@@ -203,6 +199,7 @@ class plgContentVideoGallery extends JPlugin
 					$gallery[$foundImgs] = new JObject;
 					$imgGallery[$founds] = new JObject;
 
+
 					// Assign source image and path to a variable
 					$original = $sitePath.str_replace('/', DS, $srcVideoFolder).DS.$filename;
 
@@ -219,10 +216,12 @@ class plgContentVideoGallery extends JPlugin
 
 					$plg_html .= '<a href="'. JURI::root(true).str_replace('//','/',$gallery[$foundImgs]->sourceVideoFilePath).'"><img src="'. JURI::root(true).str_replace('//','/',$imgGallery[$founds]->sourceVideoFilePath).'" alt="Big Buck Bunny, Copyright Blender Foundation"></a>';
 
+
 				}// foreach loop
 
 				// OUTPUT render gallery end
 				
+
 				if (!$gallery){
 					JError::raiseNotice('', JText::_('JW_PLG_SIG_NOTICE_03').' '.$srcVideoFolder);
 					continue;
@@ -256,8 +255,6 @@ class plgContentVideoGallery extends JPlugin
 					$itemPrintURL = false;
 				}
 
-				// Fetch the template	
-					
 				$plg_html .= '</div>';
 				
 
