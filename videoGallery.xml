@@ -7,14 +7,10 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@avalonhosting.services</authorEmail>
 	<authorUrl>https://avalonhosting.services</authorUrl>
-	<version>3.0.0</version>
+	<version>3.0.1</version>
 	<description>PLG_CONTENT_VIDEOGALLERY_XML_DESCRIPTION</description>
 	<files>
-		<filename plugin="videoGallery">html5gallery.js</filename>
-		<filename plugin="videoGallery">script.js</filename>
-		<filename plugin="videoGallery">html5gallery.css</filename>
 		<filename plugin="videoGallery">videoGallery.php</filename>
-		<filename plugin="videoGallery">videoGallery.xml</filename>
 		<filename plugin="videoGallery">videoGallery.xml</filename>
 		<folder>skins</folder>
 		<folder>css</folder>	

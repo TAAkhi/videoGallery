@@ -1,3 +1,2 @@
 jQuery(function($){
-	$('#freeLink').hide();
 });
